@@ -7,3 +7,33 @@ WORA- write once run any where
 1992-star7 demo: A handheld prototype(7)shows oak code running on custom hardware
 1995-Renamed java:"Oak" is already trade marked, java is publicly announced May 1995
 1996-JDK1.0: first official release ( january 1996) - java goes main stream
+
+***THE PROBLEM: devices used different chips and operating systems A C/C++ program had to be recompiled - often rewritten -- for each one
+JAVA 1.0 - JVM core libraries ,applets,"write once run any where"
+JAVA 5- Generics ,annotations, enums,enhanced for loop
+java 8 - It is standard version and Java 8 (2014) march  Lambda expressions,Stream API,New Date and Time API,Functional programming support.
+Java 11 (2018)-Improved performance,New HTTP Client API,String methods and other library improvements,Simplified execution of Java programs.
+Java 17 (2021)-Records,Sealed classes,Pattern matching improvements,Better performance and security.
+Java 21 (2023)-Virtual threads,Pattern matching.
+
+Data types
+Numerical data types:
+1. int
+2. float
+3. double
+4. long
+5. short
+6. byte
+String types:
+1. char
+2. String
+Boolean types:
+1. boolean
+
+definition of variable: A variable is a stored memory location used to store data.
+Variable declaration rules:
+1. it should not start with numericals.
+2. spaces are not allowed.
+3. special characters are not allowed except underscore and dollar sign.
+4. Java keywords cannot be used as a variable names.
+5. A variable must be declared with a data type.
