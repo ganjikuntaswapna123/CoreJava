@@ -37,3 +37,35 @@ Variable declaration rules:
 3. special characters are not allowed except underscore and dollar sign.
 4. Java keywords cannot be used as a variable names.
 5. A variable must be declared with a data type.
+
+METHOD EXPLANATION
+Scanner method                  Example                     Return type
+nextInt()                       25                             int         
+nextLong()                      9876543210L                    long
+nextFloat()                     85.5F                          float
+nextDouble()                    25000.75                       double
+next()                          venu                           String
+nextLine()                      hello java                     String
+next().chatAt(0)                A                              char
+nextBoolean()                   true                           boolean
+
+ARITHMETIC OPERATORS:
+=> +, -, *, /, % x
+BITWISE OPERATORS:
+&, |, >>, <<
+LOGICAL OPERATORS:
+&&, ||, !
+RELATIONAL OPERATORS:
+<, <=, >, >=, ==, !=
+
+LEFT SHIFT MEANS ADDING,RIGHT SHIFT MEANS REMOVING
+EX: 24<<2  =>  1100000 = 96
+24>>2  => 11000 = 6
+EXOR:
+0 0 => 0
+0 1 => 1
+1 0 => 1
+1 1 => 1
+COMMENTS:
+// - Single line comments
+/* */ - Multi line comments
