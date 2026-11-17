@@ -21,10 +21,10 @@ CONTROL STATEMENTS:
 -> Return
 
 Syntax: is a set of rules used to write program correctly.
-if condition {
+-> if condition {
   //block of code
 }
-else {
+-> else {
   //block of code
 }
 CODE:
@@ -43,4 +43,55 @@ public class If {
             System.out.print("Condition is false");
         }
     }
+}
+
+-> ELSEIF LADDER Syntax:
+if condition1 {
+//block of code
+}
+else if condition2 {
+//block of code
+}
+else if condition3 {
+//block of code
+}
+else if condition4 {
+//block of code
+}
+else {
+//block of code
+}
+
+CODE:
+import java.lang.*;
+import java.util.*;
+public class ElseifLadder {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter marks:");
+        int marks=sc.nextInt();
+        if(marks>=80) {
+            System.out.println("Distinction");
+        }
+        else if(marks<80 && marks>=60) {
+            System.out.println("First class");
+        }
+        else if(marks<60 && marks>=50) {
+            System.out.println("Second class");
+        }
+        else if(marks<50 && marks>=35) {
+            System.out.println("Third class");
+        }
+        else {
+            System.out.println("fail");
+        }
+    }
+}
+
+-> NESTED IF Syntax:
+if condition1 {
+  if condition2 {
+     //block of code statement2
+   }
+ //block of code statement2
 }
