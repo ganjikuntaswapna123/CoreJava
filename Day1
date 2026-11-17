@@ -69,3 +69,59 @@ EXOR:
 COMMENTS:
 // - Single line comments
 /* */ - Multi line comments
+
+OPERATORS CODE:
+import java.lang.*;
+import java.util.*;
+public class Operators {
+    public static void main(String args[]){
+       int pettycash,tiffin,dinner,total_expensive,savings;
+       float average_perday;
+       Scanner sc=new Scanner(System.in);
+         System.out.println("Enter pettycash");
+         pettycash=sc.nextInt();
+         System.out.println("Enter tiffin");
+         tiffin=sc.nextInt();
+         System.out.println("Enter dinner");
+         dinner=sc.nextInt();
+         total_expensive=tiffin+dinner;
+         average_perday=(float)total_expensive/7;
+         savings=pettycash-total_expensive;
+         System.out.println("Savings: "+savings);
+         System.out.println("Total expenses: "+total_expensive);
+         System.out.println("Average per day: "+average_perday);
+
+    }
+}
+
+BITWISE OPERATOR CODE:
+import java.lang.*;
+import java.util.*;
+public class Bitwise {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two numbers:");
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        System.out.println("Bitwise AND:"+(num1 & num2));
+        System.out.println("Bitwise OR:"+(num1 | num2));
+        System.out.println("Bitwise XOR:"+(num1 ^ num2));
+        System.out.println("Bitwise NOT of num1:"+(~num1));
+        System.out.println("Bitwise NOT of num2:"+(~num2));
+        System.out.println("Left shift of num1:"+(num1 << 2));
+        System.out.println("Right shift of num1:"+(num1 >> 2));
+    }
+}
+
+TERNARY OPERATOR CODE:
+import java.lang.*;
+import java.util.*;
+public class Ternary {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+        String result = (num % 2 == 0) ? "Even" : "Odd";
+        System.out.println(result);
+    }
+}
