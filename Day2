@@ -236,6 +236,140 @@ public class Calculator {
         }
     }
 }
+---------------------------------------------------------------------------
+2027 CALENDER:
+public class Calender1 {
+    public static void main(String[] args) {
+        int month = 1;
+        int days = 0;
+        int startDay = 5;
+        while (month <= 12) {
+            switch(month) {
+                case 1: 
+                    days = 31; 
+                    break;
+                case 2: 
+                    days = 28; 
+                    break;
+                case 3: 
+                    days = 31; 
+                    break;
+                case 4: 
+                    days = 30; 
+                    break;
+                case 5: 
+                    days = 31; 
+                    break;
+                case 6: 
+                    days = 30; 
+                    break;
+                case 7: 
+                    days = 31; 
+                    break;
+                case 8: 
+                    days = 31; 
+                    break;
+                case 9: 
+                    days = 30; 
+                    break;
+                case 10: 
+                    days = 31; 
+                    break;
+                case 11: 
+                    days = 30; 
+                    break;
+                case 12: 
+                    days = 31; 
+                    break;
+            }
+
+            switch (month) {
+                case 1: 
+                System.out.println("\n       JANUARY 2027"); 
+                    break;
+                case 2: 
+                    System.out.println("\n      FEBRUARY 2027"); 
+                    break;
+                case 3: 
+                    System.out.println("\n        MARCH 2027"); 
+                    break;
+                case 4: 
+                    System.out.println("\n        APRIL 2027"); 
+                    break;
+                case 5: 
+                    System.out.println("\n         MAY 2027"); 
+                    break;
+                case 6: 
+                    System.out.println("\n         JUNE 2027"); 
+                    break;
+                case 7: 
+                    System.out.println("\n         JULY 2027"); 
+                    break;
+                case 8: 
+                    System.out.println("\n        AUGUST 2027"); 
+                    break;
+                case 9: 
+                    System.out.println("\n      SEPTEMBER 2027"); 
+                    break;
+                case 10: 
+                    System.out.println("\n       OCTOBER 2027"); 
+                    break;
+                case 11: 
+                    System.out.println("\n      NOVEMBER 2027"); 
+                    break;
+                case 12: 
+                    System.out.println("\n      DECEMBER 2027"); 
+                    break;
+            }
+
+            System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+
+            switch (startDay) {
+                case 0: 
+                    break;
+                case 1: 
+                    System.out.print("    "); 
+                    break;
+                case 2: 
+                    System.out.print("        "); 
+                    break;
+                case 3: 
+                    System.out.print("            "); 
+                    break;
+                case 4: 
+                    System.out.print("                "); 
+                    break;
+                case 5:
+                    System.out.print("                    ");
+                    break;
+
+                case 6:
+                    System.out.print("                        ");
+                    break;
+            }
+
+            int day = 1;
+
+            while (day <= days) {
+
+                System.out.printf("%3d ", day);
+
+                if ((startDay + day) % 7 == 0) {
+                    System.out.println();
+                }
+
+                day++;
+            }
+
+            System.out.println();
+
+            startDay = (startDay + days) % 7;
+
+            month++;
+        }
+    }
+}
+
 =============================================================================================================================
 -> FOR LOOP Syntax:
 for(initialization;condition;increment/decrement);
@@ -261,3 +395,172 @@ public class For {
         }
     }
 }
+1 to 20 TABLES:
+import java.util.Scanner;
+import java.lang.*;
+public class For {
+    public static void main(String args[]) {
+        int num=10;
+        for(int i=1;i<=20;i++) {
+            System.out.println("Multiplication table of " + i);
+            for(int j=1; j<=num; j++) {
+            System.out.println(i + " * " + j + " = " +(i * j));
+        }
+        }
+    }
+}
+----------------------------------------------------------------------
+import java.util.Scanner;
+import java.lang.*;
+public class For {
+    public static void main(String args[]) {
+        int num=10;
+        for(int i=1;i<=40;i++) {
+            System.out.println("Multiplication table of " + i);
+            System.out.println("Started.......");
+            for(int j=1; j<=num; j++) {
+            System.out.println(i + " * " + j + " = " +(i * j));
+            }
+            System.out.println("Ended.......");
+        }
+        }
+    }
+------------------------------------------------------------------------
+EVEN AND ODD TABLES:
+import java.util.Scanner;
+import java.lang.*;
+public class For {
+    public static void main(String args[]) {
+        int num=10;
+        System.out.println("Even tables.............");
+        for(int i=1;i<=40;i++) {
+            if(i % 2==0) {
+                System.out.println("Multiplication table of " + i);
+                System.out.println("Even tables:");
+                for(int j=1; j<=num; j++) {
+                 System.out.println(i + " * " + j + " = " +(i * j));
+                }
+            }
+        }
+        System.out.println("Odd tables...........");
+        for(int i=1;i<=40;i++) {
+            if(i % 2!=0) {
+                System.out.println("Multiplication table of " + i);
+                for(int j=1; j<=num; j++) {
+                 System.out.println(i + " * " + j + " = " +(i * j));
+                }
+            }
+        }
+    }
+}
+---------------------------------------------------------------------------------
+STARS PATTERN:
+import java.util.Scanner;
+public class Stars1{
+    public static void main(String args[]){
+        int n=0;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                System.out.print(" * ");
+                n++;
+            }
+            System.out.println(" ");
+        }
+        System.out.println(n);
+
+    }
+}
+OUTPUT:
+ *  *  *  *  *  
+ *  *  *  *  *  
+ *  *  *  *  *  
+ *  *  *  *  *  
+ *  *  *  *  *  
+25
+--------------------------------------------------------------
+public class Stars {
+    public static void main(String args[]) {
+        int num=5;
+        for(int i=1;i<=num;i++) {
+            for(int j=1;j<=i;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+OUTPUT:
+*
+**
+***
+****
+*****
+----------------------------------------------------------------
+public class Stars2 {
+    public static void main(String args[]) {
+        int n=0;
+        for(int i=5;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print(" * ");
+                n++;
+            }
+            System.out.println(" ");
+        }
+        System.out.println(n);
+    }
+}
+OUTPUT:
+ *  *  *  *  *  
+ *  *  *  *  
+ *  *  *  
+ *  *  
+ *  
+15
+----------------------------------------------------------------
+public class Rectangle {
+    public static void main(String args[]) {
+        int n=0;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=8;j++) {
+                System.out.print(" * ");
+                n++;
+            }
+            System.out.println(" ");
+        }
+        System.out.println(n);
+    }
+}
+OUTPUT:
+ *  *  *  *  *  *  *  *  *  
+ *  *  *  *  *  *  *  *  *  
+ *  *  *  *  *  *  *  *  *  
+ *  *  *  *  *  *  *  *  *  
+ *  *  *  *  *  *  *  *  *  
+45
+----------------------------------------------------------------
+
+public class Triangle {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 5; i++) {
+
+            // Print spaces
+            for (int j = 5; j > i; j--) {
+                System.out.print(" ");
+            }
+
+            // Print stars
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+OUTPUT:
+    *
+   ***
+  *****
+ *******
+*********
