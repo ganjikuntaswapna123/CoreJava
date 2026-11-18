@@ -82,5 +82,119 @@ public class SecondLarger {
     }
        
 }
+-------------------------------------------------------------------------------------
+REVERSEARRAY USING FOR LOOP:
+public class ReverseArray {
+    public static void main(String args[]) {
+        int arr[]={1,2,3,4,5};
+        for(int i=arr.length-1;i>=0;i--)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+--------------------------------------------------------------------------------------
+ReverseArray Using While loop:
+-> LeftRotation
+public class ReverseArray {
+    public static void main(String args[]) {
+        int arr[]={1,2,3,4,5};
+        int left=0;
+        int right=arr.length-1;
+        while(left<right) {
+            int temp=arr[left];
+            arr[left]=arr[right];
+            arr[right]=temp;
+            left++;
+            right--;
+        }
+        for(int i=0;i<=arr.length-1;i++) {
+            System.out.print(arr[i]+" ");
+        }
+    
+    }
+}
+------------------------------------------------------------------------------------------
+RverseArray: Right rotation
+public class ReverseArray {
+    public static void main(String args[]) {
+        int arr[]={1,2,3,4,5};
+        int temp=arr[0];
+        for(int i=0;i<arr.length-1;i++) {
+            arr[i]=arr[i+1];
+        }
+        arr[arr.length-1]=temp;
+        for(int i=0;i<arr.length;i++) {
+            System.out.print(arr[i]+" ");
+        }
 
+    }
+}
+-------------------------------------------------------------------------------
+2D Array code:
+public class TwoD {
+    public static void main(String args[]) {
+        int a[][]=new int[3][3];
+        int sum=0;
+        a[0][0]=10;
+        a[0][1]=20;
+        a[0][2]=30;
+        a[1][0]=40;
+        a[1][1]=50;
+        a[1][2]=60;
+        a[2][0]=70;
+        a[2][1]=80;
+        a[2][2]=90;
+        for(int row=0;row<=a.length-1;row++) {
+            for(int col=0;col<a.length-1;col++) {
+                sum+=a[row][col];
+            }
+        }
+        System.out.println("Sum of all elements: " + sum);
+    }
+}
+---------------------------------------------------------------------------------------
+3D Array code:
+public class TwoD {
+    public static void main(String args[]) {
+        int a[][][]=new int[3][3][3];
+        int sum=0;
+        a[0][0][0]=10;
+        a[0][0][1]=20;
+        a[0][0][2]=30;
+        a[0][1][0]=40;
+        a[0][1][1]=50;
+        a[0][1][2]=60;
+        a[0][2][0]=70;
+        a[0][2][1]=80;
+        a[0][2][2]=90;
+        a[1][0][0]=10;
+        a[1][0][1]=20;
+        a[1][0][2]=30;
+        a[1][1][0]=40;
+        a[1][1][1]=50;
+        a[1][1][2]=60;
+        a[1][2][0]=70;
+        a[1][2][1]=80;
+        a[1][2][2]=90;
+        a[2][0][0]=10;
+        a[2][0][1]=20;
+        a[2][0][2]=30;
+        a[2][1][0]=40;
+        a[2][1][1]=50;
+        a[2][1][2]=60;
+        a[2][2][0]=70;
+        a[2][2][1]=80;
+        a[2][2][2]=90;
+        for(int i=0;i<=a.length-1;i++) {
+            for(int j=0;j<a.length-1;j++) {
+                for(int k=0;k<a.length-1;k++) {
+                    sum+=a[i][j][k];
+                }
+                
+            }
+        }
+        System.out.println("Sum of all elements: " + sum);
+    }
+}
 
