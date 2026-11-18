@@ -197,4 +197,69 @@ public class TwoD {
         System.out.println("Sum of all elements: " + sum);
     }
 }
+=============================================================================================================================
+STRINGS:
+1. length()
+Returns the number of characters in a string.
+Ex:String s="Java";
+System.out.println(s.length());
+output: 4
 
+2. charAt()
+Returns the character at a specified index.
+Ex: String s="Java";
+System.out.println(s.charAt(1));
+output: a
+
+3. toUpperCase()
+Converts all characters into uppercase.
+Ex: String s="Java";
+System.out.println("s.toUpperCase());
+output:JAVA
+
+4. toLowerCase()
+Converts all characters into lowercase.
+Ex: String s="JAVA";
+System.out.println("s.toLowerCase());
+output:java
+
+5. equals()
+Compares two strings based on their content.
+Ex: String a="Java";
+String b="Java";
+System.out.println(a.equals(b));
+output: true
+
+6. equalsignoreCase()
+Compares Strings without considering uppercase or lowercase differences.
+Ex:String a="JAVA";
+String b="java";
+System.out.println(a.equalsIgnoreCase(b));
+output:true
+
+7. contains()
+Checks whether a string contains a particular sequence of characters.
+Ex: String s="Java Programming";
+System.out.println(s.contains("Java"));
+output: true
+
+8. substring()
+Extracts a part of a string.
+Ex: String s="Programming";
+System.out.println(s.substring(0,4));
+output: Prog
+
+9. replace()
+Replaces characters or character sequences.
+Ex: String s="Java";
+System.out.println(s.replace('a','o'));
+output:Jovo
+
+10. trim()
+Removes leading and trailing spaces.
+Ex: String s = "Hello";
+System.out.println(s.trim());
+output: Hello
+
+11. startsWith()
+Checks whether a string starts 
