@@ -1,0 +1,86 @@
+ARRAYS:
+CODE:
+public class Array {
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int venu=3;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]==venu)
+            {
+                System.out.println("data is found");
+            }
+            else
+            {
+                System.out.println("data is not found");
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------
+LARGER NUMBER USING ARRAY:
+public class Larger {
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int num=a[0];
+        for(int i=1;i<a.length;i++)
+        {
+            if(a[i]>num)
+            {
+                num=a[i];
+            }
+        }
+        System.out.println("Largest element is: "+num);
+           
+    }
+       
+}
+----------------------------------------------------------------------------------
+SECOND LARGER NUMBER:
+public class Larger {
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int num=a[0];
+        for(int i=1;i<a.length;i++)
+        {
+            if(a[i]>num)
+            {
+                num=a[i];
+            }
+        }
+        System.out.println("Largest element is: "+num);
+           
+    }
+       
+}
+-----------------------------------------------------------------------------------
+SECOND SMALLEST NUMBER:
+public class SecondLarger {
+     public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int num=a[0];
+        int second=a[0];
+        for(int i=1;i<a.length;i++)
+        {
+            if(a[i]<num)
+            {
+                second=num;
+                num=a[i];
+            }
+            else if(a[i]<second && a[i]!=num)
+            {
+                second=a[i];
+            }
+        }
+        System.out.println("Smallest element is: "+num);
+        System.out.println("Second smallest element is: "+second);
+           
+    }
+       
+}
+
+
