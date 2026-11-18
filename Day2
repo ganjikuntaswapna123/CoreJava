@@ -564,3 +564,40 @@ OUTPUT:
   *****
  *******
 *********
+============================================================================================================================
+WHILE LOOP:
+Syntax:
+while(condition) {
+  //statement
+  //++/--
+};
+CODE:
+public class While {
+    public static void main(String[] args) {
+        int i=1;
+        int num=3;
+        while(i <= 10) {
+            System.out.println(num+" * "+i+" = "+(num*i));
+            i++;
+        };
+    }
+} 
+============================================================================================================================
+DOWHILE LOOP:
+Syntax:
+do {
+  //statement
+  //++/--
+}while(condition);
+CODE:
+public class While {
+    public static void main(String[] args) {
+        int i=1;
+        int num=3;
+        do {
+            System.out.println(num+" * "+i+" = "+(num*i));
+            i++;
+        } while(i <= 10);
+    }
+} 
+============================================================================================================================
