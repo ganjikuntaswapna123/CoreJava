@@ -1,0 +1,89 @@
+STRING: String is a class not a datatype
+-> Text is stored as a sequence of characters,indexed from 0.
+Sample code:
+import java.lang.*;
+import java.util.*;
+public class StringSample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str=sc.nextLine();
+        String obj=new String("Hello");
+        System.out.println(obj+" "+str);
+        String obj1=new String("Swapna");
+        for(int i=0;i<obj1.length();i++) {
+            System.out.println(obj1.charAt(i)+" ");
+        }
+        System.out.println(obj1.length());
+        System.out.println(obj1.toUpperCase());
+        System.out.println(obj1.toLowerCase());
+        System.out.println(obj1.trim());
+        System.out.println(obj1.replace('S','u'));
+        System.out.println(obj1.charAt(2));
+        System.out.println(obj1.indexOf('a'));
+        System.out.println(obj1.substring(2,4));
+        System.out.println(obj1.strip());
+        System.out.println(obj1.isEmpty());
+        System.out.println(obj1.equals("Swapna 1"));
+        System.out.println(obj1.equalsIgnoreCase("SWAPNA"));
+        System.out.println(obj1.compareTo("Swapna 1"));
+        System.out.println(obj1.compareToIgnoreCase("SWAPNA 1"));
+        System.out.println(obj1.startsWith("Swa"));
+        System.out.println(obj1.endsWith("na"));
+        System.out.println(obj1.contains("wap"));
+        System.out.println(obj1.split(""));
+        System.out.println(obj1.replaceAll("swapna 1","SWAPNA 1"));
+        System.out.println(obj1.replaceFirst("a","A"));
+        System.out.println(obj1.matches("Swapna 1"));
+        System.out.println(obj1.toCharArray());
+        System.out.println(obj1.getBytes());
+        System.out.println(obj1.intern());
+        
+    }
+}
+-------------------------------------------------------------------------------------
+INSPECT:
+-> length()
+-> charAt()
+-> isEmpty()
+-> isBlank()
+
+EXTRACT BY INDEX:
+-> subString() - str.subString(0,4);
+-> indexOf() - str.indexOf("s");
+
+COMPARE:
+-> equals() - str.equals(str1)
+-> compareTo() - Check greater than or less than Ex: str.compareTo(str1)
+
+FIND:
+-> contains() - str.contains("@")
+-> startsWith() - str.startsWith("Swapna")
+-> endsWith() - str.endsWith(".com")
+
+TRANSFORM:
+-> trim() - It is used to trim the space,it removes only end spaces.
+Ex: str="swapna "
+str.trim()
+-> strip() - It removes unwanted spaces give required spaces.
+Ex: str="swapna  123 "
+str.strip() -> "swapna 123"
+-> concate() - str.concate("hello");
+-> repeat() - str.repeat(3);
+
+REPLACE:
+-> replace()
+Ex: str="swapna"
+str.replace('a','o')
+-> replaceAll() - 
+-> replaceFirst
+
+-> split() - str.split(",");
+-> join() - str1.join("|",str2);
+-> toCharArray() - Ex:char[] swap = "swapna" tocharArray();
+-> valueOf()
+-> matches() - It is prediction whether it is there or not
+Ex: str.match([0-9])
+-> formatted() - it checks the content is in grammatical format or not
+Ex: format("Hi, swapna scored 88%");
+
+STRING BUILDER:
