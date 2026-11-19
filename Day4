@@ -85,5 +85,116 @@ str.replace('a','o')
 Ex: str.match([0-9])
 -> formatted() - it checks the content is in grammatical format or not
 Ex: format("Hi, swapna scored 88%");
-
+=============================================================================================================================
 STRING BUILDER:
+public class Builder {
+    public static void main(String args[]) {
+        StringBuilder obj = new StringBuilder("Hello");
+        System.out.println(obj);
+        obj.append(" swapna");
+        System.out.println(obj);
+        obj.insert(2,"is");
+        System.out.println(obj);
+        obj.replace(1,3,"world");
+        System.out.println(obj);
+        obj.delete(1,3);
+        System.out.println(obj);
+        obj.deleteCharAt(4);
+        System.out.println(obj);
+        obj.reverse();
+        System.out.println(obj);
+        obj.capacity();
+        System.out.println(obj);
+        obj.charAt(5);
+        System.out.println(obj);
+        obj.setCharAt(1,'p');
+        System.out.println(obj);
+        obj.toString();
+        System.out.println(obj);
+    }
+}
+============================================================================================================================
+STRING BUFFER:
+public class Buffer {
+    public static void main(String args[]) {
+        StringBuffer obj = new StringBuffer("Hii Swapna");
+        System.out.println(obj);
+        obj.append(" swapna");
+        System.out.println(obj);
+        obj.insert(2,"is");
+        System.out.println(obj);
+        obj.replace(1,3,"world");
+        System.out.println(obj);
+        obj.delete(1,3);
+        System.out.println(obj);
+        obj.deleteCharAt(4);
+        System.out.println(obj);
+        obj.reverse();
+        System.out.println(obj);
+        obj.capacity();
+        System.out.println(obj);
+        obj.charAt(5);
+        System.out.println(obj);
+        obj.setCharAt(1,'p');
+        System.out.println(obj);
+        obj.toString();
+        System.out.println(obj);
+    }
+}
+=============================================================================================================================
+Class: is a blue print of an object used to create objects
+Types of classes:
+1. concrete class
+2. Abstract class
+3. Final class
+4.Static Nested class
+5. Inner class
+6. Local class
+7. Ananymous class
+8. Enum class
+9. Interface
+
+1. concrete class
+A concetrating class is a regular class used to create the objects
+
+CONSTRUCTOR:
+TYPES OF CONSTRUCTORS:
+1. Default constructor
+2. Parameterized Constructor
+3. Non-parameterized Constructor
+
+ACCESS MODIFIERS:
+1. Default
+2. Private
+3. Public
+4. protected
+
+VARIABLES:
+1. Global - 
+2. Local
+3. Instance
+
+FUNCTIONS:
+1. With parameters with return type
+2. With parameters without return type
+3. Without parameters with return type
+4. Without parameters without return type
+
+STATIC METHOD:
+Class Swapna {
+static int Area(int a,int b) {
+retun a*b;
+}
+psvm {
+Swapna.Area(10,20);
+}
+
+NON-STATIC METHOD:
+Class Swapna {
+int Area(int a,int b) {
+retun a*b;
+}
+psvm {
+Swapna obj = new Swapna();
+obj.Area(10,20);
+}
