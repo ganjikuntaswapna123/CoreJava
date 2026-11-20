@@ -1,0 +1,257 @@
+-> 4 PILLARS OF OOPS:
+1. ENCAPSULATION->wrapping (or) binding of data
+2. POLYMORPHISM->it implements two types
+                1.method overloading-->same method with different parameters(Single class)
+                2.method overriding-->same method with same parameters(2 classes)
+*poly means->many
+*morphism means-> forms
+
+3.INHERITANCE
+TYPES OF INHERITANCE
+1.single
+2.multi level
+3.hierarical
+4.multiple->it is not acceptable in inheritance (it consists interfaces)
+5.hybrid
+
+1. Single Inheritance
+Syntax:
+class A {
+  //Block of code
+}
+class B extends  A {
+  //Block of code
+}
+
+CODE:
+class A {
+    void display() {
+        System.out.println("Base class");
+    }
+}
+class B extends A {
+    void eat() {
+        System.out.println("Iam Child class");
+    }
+}
+public class Single {
+    public static void main(String args[]) {
+        B obj = new B();
+        obj.display();
+        obj.eat();
+    }
+}
+--------------------------------------------------------------------------------------------
+class A {
+    void perimeter(int a, int b) {
+        int length=a;
+        int breadth=b;
+        int p=2*(length+breadth);
+        System.out.println("Perimeter of a rectangle "+p);
+    }
+}
+class B extends A {
+    void areaofRectangle(int a,int b) {
+        int base=a;
+        int height=b;
+        double area=0.5*base*height;
+        System.out.println("Area of a rectangle is "+area);
+    }
+}
+class Single {
+    public static void main(String args[]) {
+        B obj = new B();
+        obj.perimeter(10,5);
+        obj.areaofRectangle(3,7);
+    }
+}
+----------------------------------------------------------------------------------------
+class A {
+    void add(int a,int b) {
+        System.out.println("Addition of two numbers "+(a+b));
+    }
+}
+class B extends A {
+    void sub(int a,int b) {
+        System.out.println("Subtraction of two numbers "+(a-b));
+    }
+}
+public class Arithmetic {
+    public static void main(String args[]) {
+        B obj=new B();
+        obj.add(6,989);
+        obj.sub(67,33);
+    }
+}
+
+----------------------------------------------------------------------------------------
+2. Multilevel Inheritance
+Syntax:
+class A {
+  //Block of code
+}
+class B extends  A {
+  //Block of code
+}
+class C extends  B {
+  //Block of code
+}
+
+CODE:
+class A {
+    void areaofRectangle(int a,int b) {
+        int base=a;
+        int height=b;
+        double area=0.5*base*height;
+        System.out.println("Area of a rectangle is "+area);
+    }
+}
+class B extends A {
+    void areaofSquare(int a) {
+        System.out.println("Area of a square "+a*a);
+    }
+}
+class C extends B {
+    void perimeter(int a, int b) {
+        int length=a;
+        int breadth=b;
+        int p=2*(length+breadth);
+        System.out.println("Perimeter of a rectangle "+p);
+    }
+}
+public class Multilevel {
+    public static void main(String args[]) {
+        C obj=new C();
+        obj.areaofRectangle(4,8);
+        obj.areaofSquare(5);
+        obj.perimeter(12,4);
+    }
+}
+-------------------------------------------------------------------------------------------
+3. Multiple Inheritance
+Syntax:
+interface A {
+  //Block of code
+}
+interface B {
+  //Block of code
+}
+class C implements A,B {
+  //Block of code
+}
+
+CODE:
+interface venu{
+    void display();
+}
+interface vamshi{
+    void msg();
+}
+class ven implements venu,vamshi{
+    public void display(){
+        System.out.println("Hello world");
+    }
+    public void msg(){
+        System.out.println("hello vamshi");
+    }
+}
+class Multiple{
+    public static void main(String[] args) {
+        ven obj= new ven();
+        obj.display();
+        obj.msg();
+    }
+}
+----------------------------------------------------------------------------------------
+4. Hierarchical Inheritance
+Syntax:
+class A {
+  //Block of code
+}
+class B extends A {
+  //Block of code
+}
+class C extends A {
+  //Block of code
+}
+
+CODE:
+class A{
+    void display(){
+        System.out.println("enter a value");
+    }
+}
+class B extends A{
+    void mam(){
+        System.out.println("enter b value");
+    }
+}
+class C extends A{
+    void vamshi(){
+        System.out.println("enter a vamshi");
+    }
+}
+class Hierarchical {
+    public static void main(String[]args){
+        B sc = new B();
+        C s = new C();
+        sc.mam();
+        sc.display();
+        s.vamshi();
+        s.display();
+    }
+}
+-------------------------------------------------------------------------------------------
+5. Hybrid Inheritance
+class A {
+  //Block of code
+}
+class B extends A {
+  //Block of code
+}
+class C extends A {
+  //Block of code
+}
+class D extends B,C {
+  //Block of code
+}
+
+CODE:
+interface pet{
+    void play();
+}
+class animal{
+    void eat(){
+        System.out.println("animal is eating");
+    }
+}
+class dog extends animal implements pet{
+    public void play(){
+        System.out.println("animal is playing games");
+    }
+    void mam(){
+        System.out.println("mam is playing with animals");
+    }
+
+}
+class cat extends animal implements pet{
+    public void play(){
+        System.out.println("hello world");
+    }
+    void men(){
+        System.out.println("men is playing game");
+    }
+}
+class Hybrid{
+    public static void main(String args[]){
+        dog obj = new dog();
+        cat obj1 = new cat();
+        obj.eat();
+        obj.mam();
+        obj.play();
+        obj1.eat();
+        obj1.men();
+        obj1.play();
+    }
+}
+------------------------------------------------------------------------------------------------
